@@ -6,18 +6,28 @@
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 
     <!-- Bootstrap CSS -->
+    <!--
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/css/bootstrap.min.css" integrity="sha384-GJzZqFGwb1QTTN6wy59ffF1BuGJpLSa9DkKMp0DgiMDm4iYMj70gZWKYbI706tWS" crossorigin="anonymous">
+    -->
+    <link rel="stylesheet" href="css/bootstrap.css">
 
 
     <title>PRITEC - Curvas Lumínicas</title>
 
     <style type="text/css">
-    .marco-caja {
+    .marco {
+        width: 80%;
         position: relative;
-        padding: 1rem;
-        margin: 1rem -15px 0;
+        padding: 3rem;
+        margin: 0.5rem -10px 0;
         border: solid #dbdee2;
-        /*border-width: .2rem 0 0;*/
+        border-width: 0.3px;
+        /* border-width: .2rem 0 0;*/
+    }
+    .centrado{
+      display:block;
+      margin-left: auto;
+      margin-right: auto;
     }
     </style>
 
@@ -26,31 +36,28 @@
 
     <!-- Optional JavaScript -->
     <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <!--
     <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.6/umd/popper.min.js" integrity="sha384-wHAiFfRlMFy6i5SRaxvfOCifBUQy1xHdJ/yoi7FRNXMRBu5WHdZYu1hA6ZOblgut" crossorigin="anonymous"></script>
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/js/bootstrap.min.js" integrity="sha384-B0UglyR+jN6CkvvICOB2joaf5I4l3gm9GU6Hc1og6Ls7i6U/mkkaduKaBhlAXv9k" crossorigin="anonymous"></script>
-
+  -->
+    <script src="js/jquery-3.3.1.slim.js"></script>
+    <script src="js/popper.js" ></script>
+    <script src="js/bootstrap.js"></script>
 
 
     <div class="container">
         <br>
         <h3>Curvas Lumínicas</h3>
         <br><br>
-        <div class="">
-          <!--
-          <div class="col-12"><strong>ABATIBLE LED</strong></div>
-          <br>
-          <div>
-              <div class="col-6"><a href="Abatible-LED/PFA3530.rar">REF. PFA3530</a></div>
-              <div class="col-6">REF. PFA3545</div>
-          </div>
-        -->
+        <div class="marco centrado">
+
             <button type="button" class="list-group-item list-group-item-action active" data-toggle="collapse" data-target="#abatible">
                     ABATIBLE LED | LED FOLDING
             </button>
 
             <div id="abatible" class="collapse">
-                  <a href="Abatible-LED/PFA3530.rar" class="list-group-item list-group-item-action"><img src="svg/file-zip.svg"/> Abatible LED 37W | 37W LED Folding. Ref PFA3530</a>
+                  <a href="Abatible-LED/PFA3530.rar" class="list-group-item list-group-item-action"><img src="svg/file-zip.svg"/> Abatible LED 37W | 37W LED Folding. <strong>Ref PFA3530</strong></a>
                   <a href="Abatible-LED/PFA3545.rar" class="list-group-item list-group-item-action"><img src="svg/file-zip.svg"/> Abatible LED 37W | 37W LED Folding. Ref PFA3545</a>
             </div>
 
@@ -235,7 +242,7 @@
             <!-- &&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&& -->
 
             <button type="button" class="list-group-item list-group-item-action active" data-toggle="collapse" data-target="#tiras-led-RGB">
-                    RGB
+                    TIRAS LED RGB
             </button>
 
             <div id="tiras-led-RGB" class="collapse">
